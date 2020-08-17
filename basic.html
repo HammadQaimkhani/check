@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="basic.css">
+</head>
+<body>
+    <div class="container-1">
+        <h2>Challange 1: Yours Age in Days</h2>
+        <div class="flex-box-container-1">
+            <div>
+
+                <button class="btn btn-primary" onclick="ageInDays()">Click Me</button>
+            </div> 
+            <div>
+
+                <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+            
+            </div>
+                 <div class="flex-box-container-1">
+                <div id="flex-box-result"></div>
+            </div>
+<!-- Challange 2.......Start......... -->
+    </div>  
+    <div class="container-2">
+        <h2>Challange 2: Cat Genrator</h2>
+    <button class="btn btn-success" id="cat-generator" onclick="generat()">Genrate Cat</button>
+        <div class="flex-box-container-2" id="flex-cat-gen">
+        </div>
+    </div> 
+<!-- Challange 3........Start........ -->
+    <div class="container-3">
+        <h2>Challange 3: Rock, Paper, Scissors</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" src="http://images.clipartpanda.com/rock-clipart-clipart-harvestable-resources-rock.png" width="150" height="150" alt="Erorr" onclick="rpsGame(this)">
+            <img id="paper" src="http://images.clipartpanda.com/paper-clipart-nexxuz-Loose-Leaf-Paper.png" width="150" height="150" alt="Erorr" onclick="rpsGame(this)">
+            <img id="scissors" src="http://thumbs.dreamstime.com/b/female-hand-sign-victory-peace-sign-scssiors-vector-color-flat-illustration-isolated-white-background-web-83128345.jpg" width="150" height="150" alt="Erorr" onclick="rpsGame(this)">
+        </div>
+    </div>
+<!-- Challange 4.......... Start......... -->
+    <div class="container-4">
+        <h2 id="change-my-color">Challange 4: CHange the Color of All Buttons!</h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                    <option value="red">Red</option>
+                </select>
+            </form>
+
+            <button class="btn btn-primary">Wee!</button>
+            <button class="btn btn-danger">Yahoo!</button>
+            <button class="btn btn-warning">Google!</button>
+            <button class="btn btn-success">Facebook!</button>
+        </div>
+    </div>
+    <script src="basic.js"></script> 
+</body>
